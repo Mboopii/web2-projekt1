@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Ticket</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generate Ticket</h1>
+        <form id="ticketForm">
+            <label for="vatin">OIB:</label>
+            <input type="text" id="vatin" name="vatin" required maxlength="11" pattern="\d{11}" title="OIB must be exactly 11 digits">
+            
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+            
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+            
+            <button type="submit" class="button">Generate Ticket</button>
+        </form>
+        <div id="message" style="color: red; font-weight: bold;"></div>
+        <div id="qrCodeContainer" class="qr-code-container"></div>
+        <a href="/" class="button">Back</a>
+    </div>
+    
+    <script src="/js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Details</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ticket Details</h1>
+        
+        <p><strong>Currently Logged-in User:</strong> <%= user.name %></p>
+
+        <div class="ticket-details">
+            <p><strong>VATIN (OIB):</strong> <%= ticket.vatin %></p>
+            <p><strong>First Name:</strong> <%= ticket.firstname %></p>
+            <p><strong>Last Name:</strong> <%= ticket.lastname %></p>
+            <p><strong>Creation Time:</strong> <%= ticket.createdat %></p>
+        </div>
+
+        <a href="/" class="button">Back to Home</a>
+    </div>
+</body>
+</html>

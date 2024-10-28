@@ -26,7 +26,7 @@ exports.generateTicket = async (req, res) => {
             [ticketId, vatin, firstName, lastName, createdAt]
         );
 
-        const ticketUrl = `localhost:3000/ticket/${ticketId}`;
+        const ticketUrl = `https://web2-projekt1-hmsk.onrender.com/ticket/${ticketId}`;
         const qrCodeImage = await qrcode.toDataURL(ticketUrl);
 
         res.status(200).json({ qrCode: qrCodeImage });
